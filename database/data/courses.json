@@ -1,20 +1,264 @@
 [
   {
-    "title": "Cyber Security Basics",
+    "title": "Penetration Tester Certificate",
     "ref_code": "CS-01",
     "duration": "20 Hours",
-    "description": "Learn the fundamentals of cyber security...",
-    "about_course": "Taught by John Doe, certified security expert...",
-    "image_path": "cyber_security.jpg",
-    "category": "Cyber Security"
+    "description": "The purpose of the Penetration Tester Certificate course is to give students an essential overview of what to look for when beginning penetration testing. Successful graduates of the course will be able to build an internal penetration test kit for performing both client-side and server-side penetration tests on a company network. The course will also alert students to potential challenges with network technology, such as wireless networks, common web apps, and remote access devices that can circumvent network perimeter security devices such as firewalls and intrusion detection systems. At the conclusion of this course, students will gain experience in both the capabilities and functionality of penetration testing tools.",
+    "about_course": "Online penetration tester classes are led by instructor Ammar Al-majali. Sign-up today using the form below for this 6-day, 20-hour certificate course that covers penetration testing execution standards and methodologies, analyzing & identifying vulnerabilities, industry reporting, Linux command line, practicing multi-level attacks, and more!\n Day 1: Penetration Testing Basics\n Day 2: Traffic Capturing and Exploiting\nDay 3: Network and Vulnerabilities\nDay 4: The OWASP Top 10\nDay 5: Buffer Overflow Attacks\nDay 6: Exploitation Techniques ",
+    "thumbnail": "penetration_tester_certificate.png",
+    "category": "Cyber Security Courses"
   },
   {
-    "title": "Data Analysis with Python",
-    "ref_code": "DA-01",
-    "duration": "25 Hours",
-    "description": "Analyze data using Python and Pandas...",
-    "about_course": "Instructor: Jane Smith, experienced data analyst...",
-    "image_path": "data_analysis.jpg",
-    "category": "Data Analysis"
+    "title": "Chief Information Security Officer Certificate",
+    "ref_code": "CS-03",
+    "duration": "20 Hours",
+    "description": "Chief Information Security Officers (CISO) lead large-scale IT security departments and are responsible for providing leadership to the overall IT security of an organization. The Chief Information Security Officer Certificate course prepares students for the complexities of this role, including how to develop risk management programs, how to properly respond as an organization to IT threats, and best practices when working with law enforcement and government entities on corporate security matters. This course is designed to bridge the knowledge gap for an existing executive manager who is making the transition to a CISO role. Successful graduates of this course will be able to understand and implement large scale IT security protocols in a corporate setting.",
+    "about_course": "",
+    "thumbnail": "chief_information_security_officer_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Security Manager Certificate",
+    "ref_code": "CS-04",
+    "duration": "20 Hours",
+    "description": "Students in the Security Manager Certificate course will gain an understanding of security, resilience and fraud functions that are focused on the protection of a business' brand, employees, assets and data. By utilizing multiple layers of interdependent systems, successful students will be able to implement strategies for IT security that increase the confidence of shareholders, customers, and business stakeholders, by preventing losses, disruptions, and damage to the business. Students will learn how to recognize and respond to IT security threats through management, organization, assessment and investigation techniques.",
+    "about_course": "",
+    "thumbnail": "security_manager_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Cyber Security Specialist Certificate",
+    "ref_code": "CS-06",
+    "duration": "20 Hours",
+    "description": "Cyber Security Specialists protect information from theft, illegal duplication, and unauthorized access. Students in the Cyber Security Specialist Certificate course will learn how to protect information on computer networks, cloud servers, mobile devices, and financial software. Successful graduates will be able to analyze potential risks, develop strategies to prevent data security breaches, and implement security measures to impede the efforts of cybercriminals across multiple platforms.",
+    "about_course": "",
+    "thumbnail": "cyber_security_specialist_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Cyber Awareness Certificate",
+    "ref_code": "CS-09",
+    "duration": "20 Hours",
+    "description": "In the Cyber Awareness Certificate course, students will learn how to assess the security culture of an organization, then create and implement a plan to improve it. Students will master strategies on how to align an IT program with an organization’s goals while earning support from the organization’s executive administration. Successful graduates will be able to understand how people learn, how to analyze media consumption, and in turn, how to create marketing campaigns that increase the likelihood of behavioral change in an organization.",
+    "about_course": "",
+    "thumbnail": "cyber_awareness_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Security Operations Center Analyst Certificate",
+    "ref_code": "CS-13",
+    "duration": "20 Hours",
+    "description": "The Security Operations Center (SOC) Analyst Certificate course is designed to develop a student’s competency in keeping an organization’s proprietary and sensitive information secure. Students will be trained on how to work inter-departmentally to identify and correct flaws in a company's security systems, solutions, and programs while recommending specific measures that can improve the company's overall security against cyber-attacks. Students will learn about the functionality of IT security devices, protocol, ports and services, real-world cyber-attacks, and how to investigate a cyber-attack. Graduates of the course will be able to utilize network packets and device logs to perform the day-to-day activities of a SOC Analyst while being able to identify various cyber-attacks and remediation strategies.",
+    "about_course": "",
+    "thumbnail": "security_operations_center_analyst_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Cyber Security Administrator Certificate",
+    "ref_code": "CS-15",
+    "duration": "20 Hours",
+    "description": "Students in the Security Manager Certificate course will gain an understanding of security, resilience and fraud functions that are focused on the protection of a business' brand, employees, assets and data. By utilizing multiple layers of interdependent systems, successful students will be able to implement strategies for IT security that increase the confidence of shareholders, customers, and business stakeholders, by preventing losses, disruptions, and damage to the business. Students will learn how to recognize and respond to IT security threats through management, organization, assessment and investigation techniques.",
+    "about_course": "",
+    "thumbnail": "cyber_security_administrator_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Digital Forensics Certificate",
+    "ref_code": "CS-24",
+    "duration": "20 Hours",
+    "description": "The Digital Forensics Certificate course provides students with an overview of the many aspects of digital forensics, which includes data analysis, the examination of personal computers, network forensics, investigating network security breaches, hacking attempts, and data theft. These course topics are discussed and applied in several class exercises, and successful graduates of this course will be able to apply forensic best practices to routine administrative procedures and alert verification, and understand how routine actions can negatively affect the forensic value of data. Additionally, this course will prepare administrators to approach both routine and unusual events in a systematic forensic manner.",
+    "about_course": "",
+    "thumbnail": "digital_forensics_certificate.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Cyber Security Fundamentals for Executives",
+    "ref_code": "CS-07",
+    "duration": "15 Hours",
+    "description": "The Cyber Security Fundamentals for Executives Certificate course provides executive leadership with an overview of various aspects of Cybersecurity in the context of modern technology. Through lectures, demonstrations, and group discussions, students will gain a foundational perspective on the challenges of designing a cybersecurity program, implementing secure systems, and other factors needed for a comprehensive cybersecurity solution. Topics covered in this course include data analysis, cyber threats and defense strategies, security design principles, information assurance fundamentals, cryptography, IT systems components, networking concepts, system administration basics, and an overview of policy, IT law, ethics, and compliance.",
+    "about_course": "",
+    "thumbnail": "cyber_security_fundamentals_for_executives.png",
+    "category": "Cyber Security Courses"
+  },
+  {
+    "title": "Data Science for Education Certificate",
+    "ref_code": "DS-02",
+    "duration": "20 Hours",
+    "description": "The Data Science for Education Certificate course provides students with training on data collection, storage, administration, visualization, and privacy as it relates to the education industry. Students will practice programming, algorithms, and methods for statistical analysis in data mining and machine learning while utilizing software tools and systems for processing educational data. Successful students will be able to implement these methods in an educational setting while understanding ethical, management, policy and legal requirements in the field of data science.",
+    "about_course": "",
+    "thumbnail": "data_science_for_education_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "Data Science for Manufacturing Certificate",
+    "ref_code": "DS-08",
+    "duration": "20 Hours",
+    "description": "Modern manufacturing techniques incorporate robotization, automation, and broad application of data. The Data Science for Manufacturing Certificate course teaches students how to use computation to work with massive manufacturing data sets to locate specific results, including the use of data structures, algorithms, parallel computing, data simulation, and analysis. Successful graduates of this course will be able to implement these data science methods within a large manufacturing setting.",
+    "about_course": "",
+    "thumbnail": "data_science_for_manufacturing_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "Data Science for Health Care Professionals Certificate",
+    "ref_code": "DS-16",
+    "duration": "20 Hours",
+    "description": "The Data Science for Health Care Professionals Certificate course provides students with a working knowledge of Real-World Data (RWD) and Real-World Evidence (RWE), and how to utilize both within the healthcare industry. Students will learn current trends in RWE and existing methodologies for using it, including considerations of ethics, design-thinking, commercial applications, and the limitations of RWE. Successful students will be able to complete exercises using RWE, applying user-friendly business intelligence tools to analyze RWD in commercial healthcare, life science pharmaceuticals, healthcare regulation, and biotech and medical device industries.",
+    "about_course": "",
+    "thumbnail": "data_science_for_health_care_professionals_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "Data Science for Petroleum Professionals Certificate",
+    "ref_code": "DS-17",
+    "duration": "20 Hours",
+    "description": "The Data Science for Petroleum Professionals Certificate course teaches students how data science is utilized within the petroleum industry. Course topics include the importance of oil & gas data, data-driven and physics-driven processes, predictive analytics, and how data can be used to proactively track operations and equipment performance. Successful students will be able to apply these topics in a number of petroleum applications, including seismic surveys, drilling equipment sensor data, production & drilling assessment, and other petroleum operations that require analysis of large datasets.",
+    "about_course": "",
+    "thumbnail": "data_science_for_petroleum_professionals_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "Data Science for Public Sector Certificate",
+    "ref_code": "DS-18",
+    "duration": "20 Hours",
+    "description": "The Data Science for Public Sector Certificate course is designed to teach students working in the public sector how to utilize data science to drive efficiency in public policy. Course topics include data capture methods, company databases, data collection on the internet, data management and storage, and presentation methods for data analysis, including report writing, producing visualizations, and policy recommendations. Successful graduates of this course will be able to implement these methods in the public sector, including applications that help deliver better public services, improve transparency, reduce costs and enhance customer service.",
+    "about_course": "",
+    "thumbnail": "data_science_for_public_sector_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "Data Science for Financial Services Certificate",
+    "ref_code": "DS-19",
+    "duration": "20 Hours",
+    "description": "The Data Science for Financial Services Certificate course teaches students how to extract valuable insights from financial data utilizing the Python programming language. Course topics include fundamentals of the Python open data science stack, Python applications to finance, how to collect data from different sources, and fundamentals of machine learning. Successful graduates of this course will develop analytical skills and tools to develop financial modeling or algorithmic trading strategy using Machine Learning.",
+    "about_course": "",
+    "thumbnail": "data_science_for_financial_services_certificate.png",
+    "category": "Data Science Certificate Courses"
+  },
+  {
+    "title": "English Language 01 Certificate",
+    "ref_code": "LG-26",
+    "duration": "20 Hours",
+    "description": "The English Language 01 Certificate course teaches students the basics of English descriptive grammar, linguistics, and important terminology used to describe elements of sentences, sentence types, subordinate clauses, adverbs, and the different verb tenses. Students will be able to identify the elements of an English sentence, identify sentence types in English, and identify types of subordinate clauses in complex sentences. Successful graduates of this course will improve their basic ability to read, write, and comprehend the English language in both professional and personal environments.",
+    "about_course": "",
+    "thumbnail": "english_language_01_certificate.png",
+    "category": "Language Certificate Courses"
+  },
+  {
+    "title": "English Language 02 Certificate",
+    "ref_code": "LG-27",
+    "duration": "20 Hours",
+    "description": "The English Language 02 Certificate course teaches students to understand a wide range of demanding English texts, recognize implicit meanings, and develop the skills to express yourself fluently and spontaneously in English. Students will practice how to use English flexibly and effectively for social, academic and professional purposes, and will learn how to produce detailed texts that utilize sophisticated organizational structures. Successful graduates of this course will increase their ability to read, write, and comprehend advanced English language in a variety of settings.",
+    "about_course": "",
+    "thumbnail": "english_language_02_certificate.png",
+    "category": "Language Certificate Courses"
+  },
+  {
+    "title": "Languages 01 (Arabic, Chinese and French) Certificate",
+    "ref_code": "LG-28",
+    "duration": "20 Hours",
+    "description": "The Languages 01 (Arabic, Chinese and French) Certificate course provides students with a basic knowledge of three different types of language: Arabic, Chinese and French. Student assignments include speaking and listening practice through audio/visual media, interactive activities, and paired dialogue exercises. Language skills are developed through graded reading activities, character writing practice, and composing short pieces for developing writing competency. This course equips students with a strong emphasis on grammar to provide the necessary framework to communicate clearly and effectively. Successful students will achieve beginning levels of fluency in communicating, reading and writing in simplified Arabic, Chinese and French characters.",
+    "about_course": "",
+    "thumbnail": "languages_01_arabic_chinese_and_french_certificate.png",
+    "category": "Language Certificate Courses"
+  },
+  {
+    "title": "Languages 02 (Arabic, Chinese and French) Certificate",
+    "ref_code": "LG-29",
+    "duration": "20 Hours",
+    "description": "The Languages 02 (Arabic, Chinese and French) Certificate course is designed for students who have been previously exposed to these three languages, and already have a basic knowledge of present, past and future verb tenses. Student vocabulary and phonetics will be enhanced through visual and auditory exercises, and dialogue and oral presentations will help in forming and developing these language skills. Successful graduates of this course will develop a strong grammar foundation through various reading, speaking, writing and listening activities.",
+    "about_course": "",
+    "thumbnail": "languages_02_arabic_chinese_and_french_certificate.png",
+    "category": "Language Certificate Courses"
+  },
+  {
+    "title": "Fundamentals of Business Communication",
+    "ref_code": "BC-05",
+    "duration": "15 Hours",
+    "description": "The Fundamentals of Business Communication Certificate course teaches students influential techniques on listening skills, knowing when to speak, and how to speak clearly and concisely. These skills are critical in business communication and will assist students in becoming more persuasive and engaging in any job field. Successful graduates of this course will be able to communicate more confidently, implementing these communication skills in both their professional and personal lives.",
+    "about_course": "",
+    "thumbnail": "fundamentals_of_business_communication.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Computer Skills",
+    "ref_code": "BC-10",
+    "duration": "15 Hours",
+    "description": "The Computer Skills Certificate course provides IT literacy and basic computer skills training for students with limited IT experience. Course topics focus on skill development related to basic computer operations and information technology. Subjects include the basic concepts and techniques of computing, common personal computing hardware, Microsoft applications, typing techniques, internet fundamentals, and advanced functions such as data input and formatting. Successful students will be able to implement these techniques in modern business applications and practical real-life scenarios.",
+    "about_course": "",
+    "thumbnail": "computer_skills.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Finance for Non-Finance Managers",
+    "ref_code": "BC-11",
+    "duration": "15 Hours",
+    "description": "The Finance for Non-Finance Managers Certificate course is designed for students who want to understand key financial business principles and apply them in a real-world context. Throughout the course, students will work through a series of nine modules that advance from understanding basic financial principles to applying financial analysis and ratios that drive business decision-making.",
+    "about_course": "",
+    "thumbnail": "finance_for_non-finance_managers.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Big Deal Closer",
+    "ref_code": "BC-14",
+    "duration": "15 Hours",
+    "description": "The Big Deal Closer Certificate course is designed for business professionals who are seeking strategies, tips, and resources that make achieving lofty goals more attainable. Students will be trained in strategies that help improve focus and motivation while providing proven business methods for exceptional new business results. Successful graduates of this course will learn the common mistakes in sales, advanced deal-closing strategies, how to shorten sales cycles, strategies for setting and exceeding business expectations, and price negotiation tactics.",
+    "about_course": "",
+    "thumbnail": "big_deal_closer.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Entrepreneurship and Internship",
+    "ref_code": "BC-20",
+    "duration": "15 Hours",
+    "description": "The Entrepreneurship and Internship Certificate course provides students an opportunity to learn and experience entrepreneurship first-hand, either in furthering a student's entrepreneurial venture or in another startup, corporate or social venture. This course provides students with experiential learning in entrepreneurial work environments that may lead to employment opportunities or the confidence to start their own companies. Successful students will learn how to apply entrepreneurship and business concepts to new business startups.",
+    "about_course": "",
+    "thumbnail": "entrepreneurship_and_internship.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Innovation Management",
+    "ref_code": "BC-21",
+    "duration": "15 Hours",
+    "description": "The Innovation Management Certificate course educates students in the sub-discipline of management that encompasses creating, planning and supervising new organizational trends to support business growth. Course topics include discovering new business niches, imagining new services and technologies, testing breakthrough corporate practices, establishing brand extensions, and foreseeing market trends. Students will apply innovative strategies to business intelligence and analytics, quality management, project management, marketing, IT, human resources and sales. Successful graduates will learn to provide general diffusion of innovation as problem-solving, introduce probabilities to understand how and why certain decisions lead to some outcomes instead of others and how to make better decisions.",
+    "about_course": "",
+    "thumbnail": "innovation_management.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Creative Thinking Certificate",
+    "ref_code": "BC-22",
+    "duration": "15 Hours",
+    "description": "The Creative Thinking Certificate course provides students with the essential skills needed to be able to think creatively and innovatively. Students will learn methods for reflection in fast-paced environments, how to assimilate large amounts of information, how to communicate new ideas innovatively and engagingly, strategies for approaching problems from new angles and producing novel solutions to work and industry challenges. Successful graduates of this course will be able to implement these methods and strategies into both their professional and personal lives.",
+    "about_course": "",
+    "thumbnail": "creative_thinking_certificate.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Digital Marketing",
+    "ref_code": "BC-23",
+    "duration": "15 Hours",
+    "description": "The Digital Marketing Certificate course equips learners with the key concepts and practical skills to begin building a marketing career in the digital age. Successful graduates of this course will be able to create and sustain a brand, conduct digital marketing through channels such as social media, understand and analyze consumer behavior across buying contexts, understand and analyze marketing metrics, and create and execute strategies for digital brand engagement and reputation management.",
+    "about_course": "",
+    "thumbnail": "digital_marketing.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Design Thinking for Innovation",
+    "ref_code": "BC-25",
+    "duration": "15 Hours",
+    "description": "In the Design Thinking for Innovation Certificate course, former Medtronic Chair & CEO Professor Bill George shows students how to become an innovation leader. Students are provided the essential elements of knowing yourself and your unique leadership gifts, motivation, and the purpose of leadership. These course topics will be covered by Professor George, along with personal stories of other cutting-edge industry pioneers, through concepts, exercises, tools, and practical tips to help successful students become exceptional innovation leaders in their respective industries.",
+    "about_course": "",
+    "thumbnail": "design_thinking_for_innovation.png",
+    "category": "Business Certificate Courses"
+  },
+  {
+    "title": "Leadership & Foster Partnership Certificate",
+    "ref_code": "BC-12",
+    "duration": "15 Hours",
+    "description": "The Leadership & Foster Partnership Certificate course enables students to learn about leadership theories and models through skill development exercises. This course links leadership with strategic thinking to promote integrative learning, and the capacity to examine and solve problems from multiple perspectives. Topics covered include decision-making techniques, critical thinking, identifying & hiring talent, organizing & fostering teams, emotional intelligence, financial management, and customer trust and credibility. Successful graduates of this course will be able to implement a leadership style and method best suited for their own professional lives, increasing their capacity to be a leader and an organizational asset in the workplace and beyond.",
+    "about_course": "",
+    "thumbnail": "leadership__foster_partnership_certificate.png",
+    "category": "Business Certificate Courses"
   }
+
 ]
