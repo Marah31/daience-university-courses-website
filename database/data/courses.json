@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Cyber Security Basics",
+    "ref_code": "CS-01",
+    "duration": "20 Hours",
+    "description": "Learn the fundamentals of cyber security...",
+    "about_course": "Taught by John Doe, certified security expert...",
+    "image_path": "cyber_security.jpg",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Data Analysis with Python",
+    "ref_code": "DA-01",
+    "duration": "25 Hours",
+    "description": "Analyze data using Python and Pandas...",
+    "about_course": "Instructor: Jane Smith, experienced data analyst...",
+    "image_path": "data_analysis.jpg",
+    "category": "Data Analysis"
+  }
+]
