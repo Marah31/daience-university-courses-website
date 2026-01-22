@@ -9,15 +9,6 @@
     ];
 @endphp
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IT Certificates - Online Courses</title>
-    <link rel="stylesheet" href="{{ asset('css/courses.css') }}">
-</head>
-<body>
-
 <div class="container">
 
     @foreach ($categories as $dbCategory => $title)
@@ -52,5 +43,3 @@
 
 </div>
 
-</body>
-</html>

@@ -3,10 +3,21 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
+use App\Models\Course;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $courses = Course::all();
+    return view('home', compact('courses'));
+})->name('home');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('/courses', function () {
+    $courses = Course::all();
+    return view('courses.index', compact('courses'));
+})->name('courses');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -17,7 +28,5 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-Route::get('/courses', [CourseController::class, 'index']);
 
 require __DIR__.'/auth.php';
