@@ -343,6 +343,19 @@ body {
     color: #5eb3e4;
     background-color: rgba(94, 179, 228, 0.08);
 }
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #3498db;
+}
 
 
 @media (max-width: 1200px) {

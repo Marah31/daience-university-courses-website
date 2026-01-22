@@ -25,8 +25,25 @@
                 <li><a href="#" class="nav-link">Degree</a></li>
                 <li><a href="{{ route('courses') }}" class="nav-link">Courses</a></li>
                 <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-                <li><a href="{{ route('login') }}" class="nav-link">Login</a></li>
                 <li><a href="#" class="nav-link">News</a></li>
+                @guest
+                <li><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+                <li><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+                @endguest
+
+                @auth
+                    <li><a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a></li>
+
+                    <li>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="nav-link btn-link">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
+                @endauth
+                    
             </ul>
 
             <div class="social-icons">
