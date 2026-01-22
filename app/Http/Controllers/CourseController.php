@@ -11,4 +11,9 @@ class CourseController extends Controller
         $courses = DB::table('courses')->get();
         return view('courses.index', compact('courses'));
     }
+    public function show($id)
+    {
+        $course = Course::findOrFail($id);
+        return view('courses.show', compact('course'));
+    }
 }

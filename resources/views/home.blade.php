@@ -9,7 +9,7 @@
 <body>
 
     @include('partials.header')
-    @include('courses.index')
+    @include('partials.slider')
     
 </body>
 </html>

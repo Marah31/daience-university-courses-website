@@ -15,9 +15,15 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/courses', function () {
-    $courses = Course::all();
+    $courses = \App\Models\Course::all();
     return view('courses.index', compact('courses'));
 })->name('courses');
+
+
+Route::get('/courses/{id}', function ($id) {
+    $course = Course::findOrFail($id);
+    return view('courses.show', compact('course'));
+})->name('courses.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
