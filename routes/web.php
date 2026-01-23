@@ -19,6 +19,16 @@ Route::get('/courses', function () {
     return view('courses.index', compact('courses'));
 })->name('courses');
 
+Route::get('/courses/search', function (\Illuminate\Http\Request $request) {
+    $query = $request->input('q');
+    
+    $courses = \App\Models\Course::where('title', 'LIKE', "%{$query}%")
+        ->orWhere('category', 'LIKE', "%{$query}%")
+        ->orWhere('ref_code', 'LIKE', "%{$query}%")
+        ->get();
+    
+    return view('courses.search', compact('courses', 'query'));
+})->name('courses.search');
 
 Route::get('/courses/{id}', function ($id) {
     $course = Course::findOrFail($id);
@@ -43,5 +53,6 @@ Route::post('/enrollment', function (\Illuminate\Http\Request $request) {
     // for now, just redirect back with success, later save to database
     return redirect()->route('enrollment')->with('success', 'Enrollment submitted successfully!');
 })->name('enrollment.submit');
+
 
 require __DIR__.'/auth.php';

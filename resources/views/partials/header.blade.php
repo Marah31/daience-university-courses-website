@@ -7,10 +7,10 @@
             </div>
 
             <div class="search-container">
-                <div class="search-bar">
+                <form action="{{ route('courses.search') }}" method="GET" class="search-bar">
                     <span class="search-icon"><img src="{{ asset('images/search-icon2.png') }}" alt="search icon"></span>
-                    <input type="text" class="search-input" placeholder="Search docs">
-                </div>
+                    <input type="text" name="q" class="search-input" placeholder="Search courses..." value="{{ request('q') }}">
+                </form>
             </div>
         </div>
     </div>
