@@ -1,0 +1,264 @@
+.enrollment-section {
+    background: linear-gradient(180deg, #0a1628 0%, #0f2138 100%);
+    min-height: 100vh;
+    padding: 60px 0 100px;
+}
+
+.enrollment-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.enrollment-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 50px;
+    align-items: start;
+}
+
+.enrollment-form-wrapper {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.form-header {
+    margin-bottom: 36px;
+}
+
+.form-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a1628;
+    margin: 0 0 8px;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.enrollment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a1628;
+}
+
+.form-group input,
+.form-group select {
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+    color: #0a1628;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #5eb3e4;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(94, 179, 228, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.btn-submit {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a1628;
+    background: #5eb3e4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+}
+
+.btn-submit:hover {
+    background: #4a9fd4;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(94, 179, 228, 0.35);
+}
+
+.fees-wrapper {
+    position: sticky;
+    top: 40px;
+}
+
+.fees-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 36px;
+}
+
+.fees-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+}
+
+.fees-subtitle {
+    font-size: 14px;
+    color: #8a9bb3;
+    margin: 0 0 28px;
+    line-height: 1.5;
+}
+
+.fees-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fees-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fees-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.fee-label {
+    font-size: 14px;
+    color: #b8c5d6;
+}
+
+.fee-amount {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.fees-total {
+    background: rgba(94, 179, 228, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.total-amount {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5eb3e4;
+}
+
+.total-amount small {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a9bb3;
+}
+
+.fees-note {
+    font-size: 13px;
+    color: #6b7a8c;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.selected-course {
+    background: rgba(94, 179, 228, 0.1);
+    border: 1px solid rgba(94, 179, 228, 0.3);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selected-course span {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.selected-course strong {
+    font-size: 14px;
+    color: #5eb3e4;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+    .enrollment-container {
+        padding: 0 40px;
+    }
+    
+    .enrollment-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .fees-wrapper {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .enrollment-section {
+        padding: 40px 0 80px;
+    }
+    
+    .enrollment-container {
+        padding: 0 24px;
+    }
+    
+    .enrollment-form-wrapper {
+        padding: 32px 24px;
+    }
+    
+    .form-header h1 {
+        font-size: 26px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .fees-card {
+        padding: 28px 24px;
+    }
+}

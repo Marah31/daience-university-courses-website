@@ -37,7 +37,7 @@
     @endif
 
     <div class="course-actions">
-        <a href="{{ route('contact') }}?course={{ $course->ref_code }}" class="btn btn-primary">
+        <a href="{{ route('enrollment') }}?course={{ $course->ref_code }}" class="btn btn-primary">
             Enroll Now
             <img src="{{ asset('images/arrow-right.png') }}" alt="" class="btn-icon">
         </a>

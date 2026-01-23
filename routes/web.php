@@ -35,4 +35,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/enrollment', function () {
+    return view('enrollment');
+})->name('enrollment');
+
+Route::post('/enrollment', function (\Illuminate\Http\Request $request) {
+    // for now, just redirect back with success, later save to database
+    return redirect()->route('enrollment')->with('success', 'Enrollment submitted successfully!');
+})->name('enrollment.submit');
+
 require __DIR__.'/auth.php';
