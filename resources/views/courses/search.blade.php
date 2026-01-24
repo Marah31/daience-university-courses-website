@@ -8,7 +8,7 @@
 
 @section('content')
 <section class="courses-page">
-    <div class="courses-page-header">
+    <div class="courses-page-header" id="courses-start">
         <h1>Search Results</h1>
         <p>
             @if($courses->count() > 0)
@@ -54,4 +54,14 @@
     </div>
     @endif
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const target = document.getElementById('courses-start');
+        if (target) {
+            setTimeout(function() {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+    });
+</script>
 @endsection

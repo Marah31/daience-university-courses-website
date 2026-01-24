@@ -32,7 +32,11 @@
                 @endguest
 
                 @auth
-                    <li><a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a></li>
+                    @if(auth()->user()->is_admin)
+                        <li><a href="{{ route('admin.dashboard') }}" class="nav-link">Admin</a></li>
+                    @else
+                        <li><a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a></li>
+                    @endif
 
                     <li>
                         <form method="POST" action="{{ route('logout') }}">
@@ -73,7 +77,7 @@
                 <br>
                 <div class="hero-buttons">
                     <a href="{{ route('courses') }}" class="btn btn-primary">Enroll Now</a>
-                    <a href="#" class="btn btn-secondary">Explore Courses</a>
+                    <a href="{{ route('courses') }}" class="btn btn-secondary">Explore Courses</a>
                 </div>
             </div>
         </div>

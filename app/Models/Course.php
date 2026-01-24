@@ -13,4 +13,8 @@ class Course extends Model
         'title', 'ref_code', 'duration', 'description',
         'about_course', 'image_path', 'category'
     ];
+    public function enrolledUsers()
+    {
+        return $this->belongsToMany(User::class, 'enrollments')->withPivot('status')->withTimestamps();
+    }
 }

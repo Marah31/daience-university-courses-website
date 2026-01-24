@@ -61,4 +61,8 @@ class User extends Authenticatable
             ->map(fn ($word) => Str::substr($word, 0, 1))
             ->implode('');
     }
+    public function enrollments()
+    {
+        return $this->belongsToMany(Course::class, 'enrollments')->withPivot('status')->withTimestamps();
+    }
 }
