@@ -10,8 +10,8 @@ class Course extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'ref_code', 'duration', 'description',
-        'about_course', 'image_path', 'category'
+        'title', 'ref_code', 'duration', 'description', 'about_course',
+        'thumbnail','category','level','objectives','requirements',
     ];
     public function enrolledUsers()
     {

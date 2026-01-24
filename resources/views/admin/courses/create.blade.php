@@ -9,7 +9,7 @@
 </div>
 
 <div class="admin-form-wrapper">
-    <form action="{{ route('admin.courses.store') }}" method="POST" class="admin-form">
+    <form action="{{ route('admin.courses.store') }}" method="POST" enctype="multipart/form-data" class="admin-form">
         @csrf
         
         <div class="form-row">
@@ -45,10 +45,12 @@
                 <label for="level">Level</label>
                 <input type="text" id="level" name="level" placeholder="e.g. Beginner">
             </div>
-            <div class="form-group">
-                <label for="thumbnail">Thumbnail Filename</label>
-                <input type="text" id="thumbnail" name="thumbnail" placeholder="e.g. course-image.jpg">
-            </div>
+        <div class="form-group">
+            <label for="thumbnail">Course Image</label>
+            <input type="file" id="thumbnail" name="thumbnail" accept="image/*" class="file-input">
+            <span class="input-hint">JPG, JPEG or PNG. Max 2MB.</span>
+        </div>
+        
         </div>
 
         <div class="form-group">

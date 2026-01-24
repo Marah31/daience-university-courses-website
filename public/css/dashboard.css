@@ -1,0 +1,496 @@
+.dashboard-section {
+    background: linear-gradient(180deg, #0a1628 0%, #0f2138 100%);
+    min-height: 100vh;
+    padding: 60px 0 100px;
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.dashboard-header {
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+}
+
+.dashboard-header p {
+    font-size: 16px;
+    color: #8a9bb3;
+    margin: 0;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.profile-card,
+.courses-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a1628;
+    margin: 0;
+}
+
+.course-count {
+    font-size: 13px;
+    font-weight: 500;
+    color: #5eb3e4;
+    background: rgba(94, 179, 228, 0.12);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.card-body {
+    padding: 28px;
+}
+
+.profile-card .card-body {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #5eb3e4, #4a9fd4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 16px;
+    color: #0a1628;
+}
+
+.enrolled-courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.enrolled-course-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.enrolled-course-item:hover {
+    background: #f3f4f6;
+}
+
+.course-thumbnail {
+    width: 80px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.course-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.course-ref {
+    font-size: 11px;
+    font-weight: 600;
+    color: #5eb3e4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.course-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0a1628;
+    margin: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-category {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.course-status {
+    flex-shrink: 0;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.status-active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.status-completed {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status-badge.status-dropped {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-view-course {
+    padding: 8px 16px;
+    background: #0a1628;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.btn-view-course:hover {
+    background: #5eb3e4;
+    color: #0a1628;
+}
+
+.no-courses {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.no-courses p {
+    font-size: 15px;
+    color: #6b7280;
+    margin: 0 0 20px;
+}
+
+.btn-browse {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #5eb3e4;
+    color: #0a1628;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-browse:hover {
+    background: #4a9fd4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-section {
+        padding: 40px 0 80px;
+    }
+    
+    .dashboard-container {
+        padding: 0 24px;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 26px;
+    }
+    
+    .profile-card .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-info {
+        align-items: center;
+    }
+    
+    .enrolled-course-item {
+        flex-wrap: wrap;
+    }
+    
+    .course-thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .course-info {
+        flex: 1 1 calc(100% - 100px);
+    }
+    
+    .course-status {
+        order: 4;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .btn-view-course {
+        order: 3;
+    }
+}
+
+.alert {
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.btn-edit-profile {
+    padding: 8px 16px;
+    background: #e2e8f0;
+    color: #475569;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-edit-profile:hover {
+    background: #cbd5e1;
+}
+
+.profile-view {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #5eb3e4, #4a9fd4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.edit-avatar-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.current-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #5eb3e4, #4a9fd4);
+}
+
+.current-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.avatar-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.avatar-upload input[type="file"] {
+    display: none;
+}
+
+.btn-upload {
+    padding: 10px 20px;
+    background: #0a1628;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-upload:hover {
+    background: #5eb3e4;
+    color: #0a1628;
+}
+
+.upload-hint {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.edit-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.edit-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.edit-form-group input {
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.edit-form-group input:focus {
+    outline: none;
+    border-color: #5eb3e4;
+    box-shadow: 0 0 0 3px rgba(94, 179, 228, 0.15);
+}
+
+.edit-form-group input:disabled {
+    background: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+.input-hint {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding-top: 12px;
+}
+
+.btn-cancel {
+    padding: 10px 20px;
+    background: #e2e8f0;
+    color: #475569;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-cancel:hover {
+    background: #cbd5e1;
+}
+
+.btn-save {
+    padding: 10px 20px;
+    background: #5eb3e4;
+    color: #0a1628;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-save:hover {
+    background: #4a9fd4;
+}

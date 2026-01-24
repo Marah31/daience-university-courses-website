@@ -12,7 +12,7 @@ class EnrollmentSubmission extends Model
         'email',
         'phone',
         'hear_about',
-        'course',
+        'course_id',
         'status',
     ];
 }

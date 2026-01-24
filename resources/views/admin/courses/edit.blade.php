@@ -9,7 +9,7 @@
 </div>
 
 <div class="admin-form-wrapper">
-    <form action="{{ route('admin.courses.update', $course->id) }}" method="POST" class="admin-form">
+    <form action="{{ route('admin.courses.update', $course->id) }}" method="POST" enctype="multipart/form-data" class="admin-form">
         @csrf
         @method('PUT')
         
@@ -45,10 +45,19 @@
                 <label for="level">Level</label>
                 <input type="text" id="level" name="level" value="{{ $course->level }}">
             </div>
+
             <div class="form-group">
-                <label for="thumbnail">Thumbnail Filename</label>
-                <input type="text" id="thumbnail" name="thumbnail" value="{{ $course->thumbnail }}">
+                <label for="thumbnail">Course Image</label>
+                @if($course->thumbnail)
+                    <div class="current-image">
+                        <img src="{{ asset('storage/courses/' . $course->thumbnail) }}" alt="{{ $course->title }}" onerror="this.src='{{ asset('images/courses/' . $course->thumbnail) }}'">
+                        <span>Current image</span>
+                    </div>
+                @endif
+                <input type="file" id="thumbnail" name="thumbnail" accept="image/*" class="file-input">
+                <span class="input-hint">Leave empty to keep current image. JPG, JPEG or PNG. Max 2MB.</span>
             </div>
+            
         </div>
 
         <div class="form-group">

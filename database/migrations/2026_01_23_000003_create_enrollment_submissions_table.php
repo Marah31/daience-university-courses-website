@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('hear_about')->nullable();
-            $table->string('course')->nullable();
+            $table->foreignId('course_id')->constrained()->onDelete('cascade');
             $table->string('status')->default('pending'); // pending, reviewed, approved
             $table->timestamps();
         });

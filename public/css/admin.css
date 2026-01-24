@@ -506,3 +506,42 @@ body {
 .search-results-info a:hover {
     text-decoration: underline;
 }
+
+
+.file-input {
+    padding: 10px;
+    border: 1px dashed #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+.file-input:hover {
+    border-color: #5eb3e4;
+}
+
+.input-hint {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.current-image {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.current-image img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.current-image span {
+    font-size: 13px;
+    color: #6b7280;
+}

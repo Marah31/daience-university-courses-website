@@ -24,7 +24,7 @@
                             <span>Enrolling for:</span>
                             <strong>{{ request('course') }}</strong>
                         </div>
-                        <input type="hidden" name="course" value="{{ request('course') }}">
+                        <input type="hidden" name="course_id" value="{{ request('course_id') }}">
                     @endif
                     
                     <div class="form-row">
