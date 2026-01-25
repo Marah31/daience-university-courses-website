@@ -55,6 +55,7 @@
                     </div>
                 @endif
                 <input type="file" id="thumbnail" name="thumbnail" accept="image/*" class="file-input">
+
                 <span class="input-hint">Leave empty to keep current image. JPG, JPEG or PNG. Max 2MB.</span>
             </div>
             

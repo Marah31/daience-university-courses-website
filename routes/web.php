@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\EnrollmentSubmission;
 use App\Models\User;
+use App\Http\Controllers\CourseController;
+
+Route::get('/_debug_php', function () {
+    phpinfo();
+});
 
 
 
@@ -98,30 +103,22 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     
-    // profile info update
-    Route::put('/profile/update', function (Request $request) {
-        $user = User::find(auth()->id());
-        
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'avatar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        ]);
-        
-        $user->name = $validated['name'];
-        
-        if ($request->hasFile('avatar')) {
-            if ($user->avatar) {
-                \Storage::disk('public')->delete($user->avatar);
-            }
-            $path = $request->file('avatar')->store('avatars', 'public');
-            $user->avatar = $path;
-        }
-        
-        $user->save();
-        
-        return redirect()->route('dashboard')->with('success', 'Profile updated successfully.');
-    })->name('profile.update.info');
+
+    // General profile info update
+    Route::put('/profile/update-general', [ProfileController::class, 'update'])
+        ->name('profile.update.general');
+
+    // Avatar + name update
+    Route::put('/profile/update', [ProfileController::class, 'updateAvatar'])
+        ->name('profile.update.info');
+
+    // Profile edit form
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+
+    // Delete account
+    Route::delete('/profile/delete', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 
 // admin routes
@@ -168,98 +165,12 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         return view('admin.courses.create');
     })->name('courses.create');
 
-   Route::post('/courses', function (Request $request) {
-        // Debug: Log all input
-        \Log::info('Course creation attempt', $request->all());
-        
-        try {
-            $validated = $request->validate([
-                'title' => 'required|string|max:255',
-                'ref_code' => 'required|string|max:50',
-                'category' => 'required|string',
-                'description' => 'required|string',
-                'duration' => 'required|string',
-                'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-                'level' => 'nullable|string',
-                'objectives' => 'nullable|string',
-                'requirements' => 'nullable|string',
-            ]);
-            
-            \Log::info('Validation passed', $validated);
-            
-            // unset($validated['thumbnail']);
-    
-            // if ($request->hasFile('thumbnail') && $request->file('thumbnail')->isValid()) {
-            //     $file = $request->file('thumbnail');
-            //     $filename = time() . '_' . $file->getClientOriginalName();
-                
-            //     // Store directly in public folder instead of storage
-            //     $file->move(public_path('uploads/courses'), $filename);
-            //     $validated['thumbnail'] = 'uploads/courses/' . $filename;
-            // }
-            unset($validated['thumbnail']);
-
-            if ($request->hasFile('thumbnail') && $request->file('thumbnail')->isValid()) {
-                $file = $request->file('thumbnail');
-                $filename = time() . '_' . preg_replace('/[^a-zA-Z0-9._-]/', '', $file->getClientOriginalName());
-                
-                $destinationPath = public_path('uploads/courses');
-                
-                if (!file_exists($destinationPath)) {
-                    mkdir($destinationPath, 0755, true);
-                }
-                
-                $file->move($destinationPath, $filename);
-                $validated['thumbnail'] = 'uploads/courses/' . $filename;
-            }
+    Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
 
 
-            $course = Course::create($validated);
-            \Log::info('Course created with ID: ' . $course->id);
-            
-            return redirect()->route('admin.courses.index')->with('success', 'Course created successfully.');
-            
-        } catch (\Exception $e) {
-            \Log::error('Course creation failed: ' . $e->getMessage());
-            \Log::error($e->getTraceAsString());
-            return redirect()->back()->with('error', 'Failed: ' . $e->getMessage())->withInput();
-        }
-    })->name('courses.store');
+    Route::get('/courses/{course}/edit', [CourseController::class, 'edit'])->name('courses.edit');
 
-    Route::get('/courses/{id}/edit', function ($id) {
-        $course = Course::findOrFail($id);
-        return view('admin.courses.edit', compact('course'));
-    })->name('courses.edit');
-
-    Route::put('/courses/{id}', function (Request $request, $id) {
-        $course = Course::findOrFail($id);
-        
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'ref_code' => 'required|string|max:50',
-            'category' => 'required|string',
-            'description' => 'required|string',
-            'duration' => 'required|string',
-            'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-            'level' => 'nullable|string',
-            'objectives' => 'nullable|string',
-            'requirements' => 'nullable|string',
-        ]);
-
-        if ($request->hasFile('thumbnail')) {
-            if ($course->thumbnail) {
-                \Storage::disk('public')->delete($course->thumbnail);
-            }
-            $path = $request->file('thumbnail')->store('courses', 'public');
-            $validated['thumbnail'] = $path;
-        } else {
-            unset($validated['thumbnail']);
-        }
-        
-        $course->update($validated);
-        
-        return redirect()->route('admin.courses.index')->with('success', 'Course updated successfully.');
-    })->name('courses.update');
+    Route::put('/courses/{course}', [CourseController::class, 'update'])->name('courses.update');
 
     Route::delete('/courses/{id}', function ($id) {
         $course = Course::findOrFail($id);

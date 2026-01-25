@@ -29,7 +29,7 @@
                     <div id="profile-view" class="profile-view">
                         <div class="profile-avatar">
                             @if($user->avatar)
-                                <img src="{{ asset('storage/' . $user->avatar) }}" alt="{{ $user->name }}">
+                                <img src="{{ asset($user->avatar) }}" alt="{{ $user->name }}">
                             @else
                                 {{ strtoupper(substr($user->name, 0, 1)) }}
                             @endif
@@ -66,7 +66,7 @@
                             <div class="avatar-upload">
                                 <label for="avatar" class="btn-upload">Choose Image</label>
                                 <input type="file" id="avatar" name="avatar" accept="image/*" onchange="previewAvatar(this)">
-                                <span class="upload-hint">JPG, JPEG or PNG. Max 2MB.</span>
+                                <span class="upload-hint">JPG, JPEG or PNG. Max 50MB.</span>
                             </div>
                         </div>
 
